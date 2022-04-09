@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles\style.css" />
+    <link rel="stylesheet" href="styles\background.css" />
+    <link rel="stylesheet" href="styles\normalize.css" />
+    <title>mondayU Quiz Game</title>
+  </head>
+  <body>
+    <div class="header-background">
+      <div class="stars"></div>
+      <div class="stars2"></div>
+      <div class="stars3"></div>
+    </div>
+    <div class="flex">
+      <div class="wrapper">
+        <div class="quiz-container" id="quiz-container">
+          <div id="timer" class="timer">
+            <div class="time_left_txt">Time Left</div>
+            <div class="timer_sec"></div>
+          </div>
+          <div class="quiz-head">
+            <h1 class="quiz-title">mondayU Quiz</h1>
+            <div class="quiz-score flex" id="score">
+              <span id="asked-question"></span>/<span
+                id="total-question"
+              ></span>
+            </div>
+          </div>
+          <div class="quiz-body">
+            <h2 class="quiz-question" id="question"></h2>
+            <ul class="list-options"></ul>
+            <div id="result"></div>
+          </div>
+          <div class="quiz-foot">
+            <input placeholder="Enter your name:" id="username" type="text" />
+            <button type="button" id="check-answer">Check Answer</button>
+            <button type="button" id="play-again">Play Again!</button>
+            <button type="button" id="leaderboard">Leaderboard</button>
+            <a href="index.html" id="menu"
+              ><button type="button">Menu</button></a
+            >
+            <img src="gifs/tenor.gif" id="correct" class="gif" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
